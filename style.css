@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans",sans-serif;
+}
+
+section {
+    padding-block: 120px;
+}
+
+hr {
+    width: 70px;
+    border: 1px solid #007bff;
+    margin-bottom: 60px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.9em;
+    color: #333;
+}
+
+h1,
+span {
+    color: #007bff;
+}
+
+span {
+    margin-inline: 5px;
+}
+.more {
+    padding: 15px 20px;
+    border: solid 1px #007bff;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+}
+
+.more:hover {
+    background-color: #007bff;
+    color: white;
+    
+}
+
+/* header */
+h1 {
+    font-size: 4.2em;
+    text-transform: uppercase;
+}
+
+.main-header {
+    height: 70vh;
+    background-image: url(../9-projekt-portfolio/img/header.jpg);
+    background-size: 120% 100%;
+    background-image: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-header div {
+    text-align: center;
+}
+
+header div p {
+    font-size: 1.3em;
+    padding-bottom: 40px;
+    color: #333;
+}
+
+/* nav */
+.menu-list {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    margin: 0%;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-inline: 1%;
+
+}
+
+nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+
+.menu-nav {
+    background-color: #007bff;
+}
+
+
+/* about */
+#about {
+    margin-inline: 30%;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.about p {
+    text-align: center;
+    color: #777;
+    line-height: 1.4;
+    margin-block: 30px;
+}
+
+.me {
+
+    border-radius: 50%;
+}
+
+/* portfolio */
+
+#portfolio {
+    background-color: #f2f1ed;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 10%;
+
+}
+
+.portfolio-item {
+    display: flex;
+    position: relative;
+    height: 220px;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+}
+
+.portfolio-item h3 {
+    position: absolute;
+    background-color: #007bff;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 220px;
+    font-size: 3em;
+    font-weight: 300;
+    color: white;
+    transition: all 0.5s;
+
+    opacity: 0;
+}
+
+.portfolio-item h3:hover {
+    opacity: 0.7;
+}
+
+
+.portfolio-item img:hover {
+    background-color: #007bff;
+    backface-visibility: 70%;
+}
+
+
+/* form */
+
+.contact {
+    margin-inline: 30%;
+
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+input[type="text"],
+input[type="email"] {
+    flex-basis: 48%;
+    height: 40px;
+    padding: 15px;
+    margin-block: 10px;
+}
+
+textarea {
+    flex-basis: 100%;
+    height: 110px;
+}
+
+input[type="submit"] {
+    background-color: white;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.icons {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.ic {
+    font-size: 3em;
+    margin-inline: 3%;
+    color: #007bff;
+}
+
+
+/* footer */
+
+footer div {
+    margin-top: 100px;
+    background-color: #f2f1ed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div p {
+    font-size: 0.8em;
+    color: #777;
+}
+
+/* media */
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .portfolio-item {
+        flex-basis: 50%;
+    }
+   
+    .contact {
+        margin-inline: 15%;
+    
+    }
+
+}
+    @media (min-width:480px) and (max-width:768px) {
+
+        .portfolio-item {
+            flex-basis: 100%;
+        }
+
+        .contact {
+            margin-inline: 5%;
+        
+        }
+    
+    }
+
+    @media (max-width:480px) {
+
+        .contact {
+            margin-inline: 2%;
+        
+        }
+
+        .portfolio-item {
+            flex-basis: 100%;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            flex-basis: 100%;
+
+        }
+    }
